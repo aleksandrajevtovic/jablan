@@ -49,6 +49,11 @@
             <version>3.0.3.RELEASE</version>
             <type>jar</type>
         </dependency>
+		<plugin>
+    <inherited>true</inherited>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>              
+</plugin>
         <!-- <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-core</artifactId>
