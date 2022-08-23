@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html
+  lang="srb"
+  xmlns="https://www.w3.org/1999/xhtml"
+  xmlns:th="https://www.thymeleaf.org"
+  xmlns:sec="https://www.thymeleaf.org/extras/spring-security"
+>
+  <head>
+    <title>Services | Interior Design Studio Jablan</title>
+
+    <meta
+      name="description"
+      content="Entrust Studia Jablan all stages of the work and take care of business. We develop the design project, we build, we carry out repair and turnkey finishing."
+    />
+
+    <th:block th:insert="fragments/head :: head" />
+
+    <!-- css files -->
+    <link th:href="@{/css/services.css}" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body id="bodyServices">
+    <th:block th:insert="fragments/navbar :: navbar" />
+
+    <div class="container services-lg">
+      <div class="block block-1">
+        <!-- <h1>Usluge</h1> -->
+        <h1>Services</h1>
+      </div>
+      <div
+        class="block block-2"
+        th:onclick="'window.location.href = \'' + @{/services/3d-visualization} + '\''"
+      >
+        <!-- <h1>3D Vizualizacija</h1> -->
+        <h1>3D Visualization</h1>
+      </div>
+      <div
+        class="block block-3"
+        th:onclick="'window.location.href = \'' + @{/services/furniture-making} + '\''"
+      >
+        <!-- <h1>Izrada nameštaja</h1> -->
+        <h1>Furniture making</h1>
+      </div>
+      <div
+        class="block block-4"
+        th:onclick="'window.location.href = \'' + @{/services/interior-design} + '\''"
+      >
+        <!-- <h1>Uređenje enterijera</h1> -->
+        <h1>Interior design</h1>
+      </div>
+      <div
+        class="block block-5"
+        th:onclick="'window.location.href = \'' + @{/services/window-treatments} + '\''"
+      >
+        <!-- <h1>Uređenje enterijera</h1> -->
+        <h1>Window treatments</h1>
+      </div>
+      <div
+        class="block block-6"
+        th:onclick="'window.location.href = \'' + @{/services/new-home-selections} + '\''"
+      >
+        <!-- <h1>Uređenje enterijera</h1> -->
+        <h1>New Home Selections</h1>
+      </div>
+    </div>
+
+    <main>
+      <div class="container services-sm">
+        <div class="grid-container">
+          <div class="item-1">
+            <!-- <h1>Usluge</h1> -->
+            <h1>Services</h1>
+          </div>
+          <div class="item-2">
+            <img src="../img/services-hero.jpg" />
+          </div>
+        </div>
+
+        <div class="services-info">
+          <div class="services-img-wrapper">
+            <div class="services-img-placeholder">
+              <img src="../img/threedimen.jpg" alt="" />
+            </div>
+          </div>
+          <div class="card">
+            <h2>
+              <!-- <a
+                class="usluge-link"
+                data-src="../img/threedimen.jpg"
+                th:onclick="'window.location.href = \'' + @{/3d-vizualizacija} + '\''"
+                >3D Vizualizacija</a
+              > -->
+              <a
+                class="services-link"
+                data-src="../img/threedimen.jpg"
+                th:onclick="'window.location.href = \'' + @{/services/3d-visualization} + '\''"
+                >3D Visualization</a
+              >
+            </h2>
+          </div>
+          <div class="card">
+            <h2>
+              <a
+                class="services-link"
+                data-src="../img/furniture-making.jpg"
+                th:onclick="'window.location.href = \'' + @{/services/furniture-making} + '\''"
+                >Furniture making</a
+              >
+            </h2>
+          </div>
+          <div class="card">
+            <h2>
+              <a
+                class="services-link"
+                data-src="../img/int-des.jpg"
+                th:onclick="'window.location.href = \'' + @{/services/interior-design} + '\''"
+                >Interior design</a
+              >
+            </h2>
+          </div>
+          <div class="card">
+            <h2>
+              <a
+                class="services-link"
+                data-src="../img/window-treatments.jpg"
+                th:onclick="'window.location.href = \'' + @{/services/window-treatments} + '\''"
+                >Window treatments</a
+              >
+            </h2>
+          </div>
+          <div class="card">
+            <h2>
+              <a
+                class="services-link"
+                data-src="../img/new-home-selections.jpg"
+                th:onclick="'window.location.href = \'' + @{/services/new-home-selections} + '\''"
+                >New Home Selections</a
+              >
+            </h2>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <th:block th:insert="fragments/scripts :: scripts" />
+    <script th:src="@{/js/anim.js}" type="text/javascript"></script>
+
+    <script th:src="@{/js/services.js}" type="text/javascript"></script>
+    <script th:src="@{/js/imgOnHover.js}" type="text/javascript"></script>
+
+    <script>
+      var blocks = document.getElementsByClassName("block");
+      var container = document.getElementsByClassName("container");
+      var hs = new HorizontalScroll.default({
+        blocks: blocks,
+        container: container,
+        isAnimated: true,
+        springEffect: 0.8,
+      });
+    </script>
+  </body>
+</html>

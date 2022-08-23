@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html
+  lang="srb"
+  xmlns="https://www.w3.org/1999/xhtml"
+  xmlns:th="https://www.thymeleaf.org"
+  xmlns:sec="https://www.thymeleaf.org/extras/spring-security"
+>
+  <head>
+    <title>New Home Selections | Interior design Studio Jablan</title>
+    <link th:href="@{/css/footer.css}" rel="stylesheet" type="text/css" />
+
+    <meta
+      name="description"
+      content="This is a service for anyone looking for assistance during their new
+      home construction. Let us walk you through the home building process
+      from exterior color coordination thru interior finishes."
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <th:block th:insert="fragments/head :: head" />
+  </head>
+
+  <body>
+    <th:block th:insert="fragments/navbar :: navbar" />
+
+    <main>
+      <div class="grid-container">
+        <div class="item-1 ml-1r">
+          <h1>New Home Selections</h1>
+        </div>
+        <div class="item-2">
+          <img src="../img/new-home-selections.jpg" />
+        </div>
+      </div>
+      <div class="content ltr">
+        <div class="left">
+          <!-- <h2>Kvalitetni materijali</h2> -->
+          <h2>Professional guidance</h2>
+        </div>
+        <div class="right">
+          <p>
+            This is a service for anyone looking for assistance during their new
+            home construction. Let us walk you through the home building process
+            from exterior color coordination thru interior finishes.
+          </p>
+        </div>
+      </div>
+      <div class="img-wrap">
+        <img src="../img/new-home-selections-2.jpg" alt="O nama 2" />
+      </div>
+      <div class="content rtl">
+        <div class="left">
+          <h2>Help with selection</h2>
+        </div>
+        <div class="right">
+          <p>
+            We will help you with your layout of custom cabinetry and trim
+            carpentry. With so many options available we can help you narrow
+            your flooring selection of hardwood, LVP or tile flooring. It is
+            easy to get overwhelmed with new home selections. Let us assist you
+            in building your dream home.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <div class="other-services-link-btn">
+      <!-- <a th:href="@{/usluge}">Ostale usluge</a> -->
+      <a th:href="@{/services}">Other services</a>
+    </div>
+    <th:block th:insert="fragments/footer :: footer" />
+
+    <th:block th:insert="fragments/scroll-to-top :: scroll-to-top" />
+
+    
+    
+    <th:block th:insert="fragments/scripts :: scripts" />
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+    integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
+    <script th:src="@{/js/anim.js}" type="text/javascript"></script>
+    <script th:src="@{/js/scrollAnim.js}" type="text/javascript"></script>
+    <script th:src="@{/js/backToTop.js}" type="text/javascript"></script>
+  </body>
+</html>

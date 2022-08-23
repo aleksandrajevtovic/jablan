@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html
+  lang="srb"
+  xmlns="https://www.w3.org/1999/xhtml"
+  xmlns:th="https://www.thymeleaf.org"
+  xmlns:sec="https://www.thymeleaf.org/extras/spring-security"
+>
+  <head>
+    <!-- <title>Greška</title> -->
+    <title>Error | Interior Design Studio Jablan</title>
+
+    <meta
+      name="description"
+      content="An error occurred, we are very sorry. Some options could help you: Please email us at info@jablanstudio.com or call us (phone number are provided on contact page)."
+    />
+
+    <th:block th:insert="fragments/head :: head" />
+
+    <!-- css -->
+    <link th:href="@{/css/error.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/css/general.css}" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <th:block th:insert="fragments/navbar :: navbar" />
+
+    <main>
+      <div class="grid-container">
+        <div class="item-1 ml-1r">
+          <!-- <h1>Greška</h1> -->
+          <h1>Error</h1>
+        </div>
+        <div class="item-2">
+          <img
+            src="https://images.unsplash.com/photo-1574070492107-e2e4835031bf?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170"
+          />
+        </div>
+      </div>
+
+      <div class="error-content">
+        <div class="error-title">
+          <!-- <h2>
+            Stranica <br />
+            nije pronađena.
+          </h2> -->
+          <h2>
+            An error occurred, <br />
+            we are very sorry.
+          </h2>
+        </div>
+
+        <div class="error-btn-section">
+          <!-- <a th:href="@{/}" class="btn primary-btn"
+            >Nazad na početnu</a
+          > -->
+          <a th:href="@{/}" class="btn primary-btn">Back to home</a>
+        </div>
+      </div>
+    </main>
+
+    <th:block th:insert="fragments/scripts :: scripts" />
+    <script th:src="@{/js/anim.js}" type="text/javascript"></script>
+  </body>
+</html>

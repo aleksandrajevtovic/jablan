@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html
+  lang="srb"
+  xmlns="https://www.w3.org/1999/xhtml"
+  xmlns:th="https://www.thymeleaf.org"
+  xmlns:sec="https://www.thymeleaf.org/extras/spring-security"
+>
+  <head>
+    <title>3D Visualization | Interior design Studio Jablan</title>
+    <link th:href="@{/css/footer.css}" rel="stylesheet" type="text/css" />
+
+    <meta
+      name="description"
+      content="If you want to bring your
+    interior design to life with photorealistic architectural visualization,
+    then Studio Jablan is the right place for you."
+    />
+
+    <!-- css files -->
+
+    <th:block th:insert="fragments/head :: head" />
+  </head>
+
+  <body>
+    <th:block th:insert="fragments/navbar :: navbar" />
+
+    <main>
+      <div class="grid-container">
+        <div class="item-1 ml-1r">
+          <h1>3D visual</h1>
+        </div>
+        <div class="item-2">
+          <img src="../img/threedimen.jpg" />
+        </div>
+      </div>
+      <div class="content ltr">
+        <div class="left">
+          <!-- <h2>Pazimo na rokove</h2> -->
+          <h2>Unique 3D Rendering</h2>
+        </div>
+        <div class="right">
+          <!-- <p>
+            Danas je 3D vizualizacija postala više nego neophodna za kvalitetan
+            i blagovremen završetak projekta, bez obzira na vrstu projekta.
+            Ubrzani tempo života nas jednostavno tera da delujemo blagovremeno
+            kako bismo projekat završili na vreme i kvalitetno.
+          </p> -->
+          <p>
+            If you want to bring your interior design to life with
+            photorealistic architectural visualization, then Studio Jablan is
+            the right place for you. We specialize in 3D visualization with a
+            focus on architecture. Your ideas, construction projects and plans
+            will be realized in close cooperation with us according to your
+            wishes and ideas. As a result each interior 3D rendering we provide
+            is unique.
+          </p>
+        </div>
+      </div>
+      <div class="img-wrap">
+        <img src="../img/kitchen-3d.jpg" alt="O nama 2" />
+      </div>
+      <div class="content rtl">
+        <div class="left">
+          <!-- <h2>Posvećeni svakom detalju</h2> -->
+          <h2>Attention to detail</h2>
+        </div>
+        <div class="right">
+          <!-- <p>
+            U bliskoj saradnji svih učesnika moguće je i preventivno delovati,
+            odnosno izbegavati neželjene situacije brzim i vernim
+            predstavljanjem željene situacije. Bilo da se radi o jednostavnijim
+            projektima, kao što su renoviranje kupatila, uređenje dnevnog
+            boravka i sl., ili izgradnja stambenog objekta i njegova
+            implementacija u životnu sredinu, u mogućnosti smo da verno
+            prikažemo svaki detalj. Profesionalno i blagovremeno delovanje
+            ubrzaće vaš projekat.
+          </p> -->
+          <p>
+            Our professionals pay special attention to 3D interior visualization
+            quality of final deliverables, as well as compliance with project
+            deadlines and overall project management.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <div class="other-services-link-btn">
+      <!-- <a th:href="@{/usluge}">Ostale usluge</a> -->
+      <a th:href="@{/services}">Other services</a>
+    </div>
+    <th:block th:insert="fragments/footer :: footer" />
+
+    <th:block th:insert="fragments/scroll-to-top :: scroll-to-top" />
+
+    <th:block th:insert="fragments/scripts :: scripts" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+      integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script th:src="@{/js/anim.js}" type="text/javascript"></script>
+    <script th:src="@{/js/scrollAnim.js}" type="text/javascript"></script>
+    <script th:src="@{/js/backToTop.js}" type="text/javascript"></script>
+  </body>
+</html>

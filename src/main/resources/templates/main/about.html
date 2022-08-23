@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html
+  lang="srb"
+  xmlns="https://www.w3.org/1999/xhtml"
+  xmlns:th="https://www.thymeleaf.org"
+  xmlns:sec="https://www.thymeleaf.org/extras/spring-security"
+>
+  <head>
+    <title>About Us | Interior Design Studio Jablan</title>
+    <link th:href="@{/css/footer.css}" rel="stylesheet" type="text/css" />
+
+
+    <meta
+      name="description"
+      content="Our mission is to fulfill the client’s dream of the perfect home. Learn about the unusual concept of Studio Jablan and our integrated approach to interior design."
+    />
+
+    <th:block th:insert="fragments/head :: head" />
+  </head>
+
+  <body id="about">
+    <th:block th:insert="fragments/navbar :: navbar" />
+
+    <main class="hero-secondary">
+      <div class="grid-container">
+        <div class="item-1 ml-1r">
+          <!-- <h1>O nama</h1> -->
+          <h1>About us</h1>
+        </div>
+        <div class="item-2">
+          <img src="../img/about-us-hero.jpg" />
+        </div>
+      </div>
+      <div class="content ltr">
+        <div class="left">
+          <!-- <h2>Posvećeni svakom projektu</h2> -->
+          <h2>Highly skilled designers</h2>
+        </div>
+        <div class="right">
+          <!-- <p>
+            Jablan je firma rođena 2013. godine. Naš tim čine stručnjaci koji
+            svakom projektu pristupaju sa pažnjom i vode računa o svakoj sitnici
+            pri uređenju Vaših prostora. Naš stručni tim je zadužen za izradu
+            svakog detalja Vašeg stana, kuće ili drugog prostora, uz idealnu
+            simbiozu različitih materijala.
+          </p> -->
+          <p>
+            Built on creativity, collaboration, and unparalleled service,
+            established in 2013, Studio Jablan experience is focused on crafting
+            the ideal environment for each client. Our team is made up of
+            experts who approach each project with care and take care of every
+            detail when decorating your spaces. Our expert team is in charge of
+            creating every detail of your apartment, house or other space, with
+            an ideal symbiosis of different materials.
+          </p>
+          <!-- <p>
+            Naš zadatak je sve – od ideje do realizacije, kako komadnog
+            nameštaja tako i celokupnog enterijera.
+          </p> -->
+          <p>
+            Each project is important to us, so is every client. We try to
+            answer the highest expectations approaching with understanding and
+            professionalism.
+          </p>
+        </div>
+      </div>
+      <div class="img-wrap">
+        <img src="../img/about-us-2.jpg" alt="O nama 2" />
+      </div>
+      <div class="content rtl">
+        <div class="left">
+          <!-- <h2>Posvećeni vrhunskom kvalitetu</h2> -->
+          <h2>Dedicated to quality</h2>
+        </div>
+        <div class="right">
+          <!-- <p>
+            Naš cilj je izgradnja kredibilnih odnosa sa klijentima, pa možete
+            biti sigurni da Vaš projekat neće biti tretiran kao samo još jedna
+            porudžbina. Svakom enterijeru pristupamo sa posebnom pažnjom i
+            inovativnim i kreativnim idejama, vodeći računa o svim detaljima.
+            Naši zadovoljni klijenti i njihovi komforni i elegantni domovi su
+            naša najbolja referenca.
+          </p> -->
+          <p>
+            Our goal is to build credible relationships with clients, so you can
+            be sure that your project will not be treated as just another order.
+            We approach each interior with special attention and innovative and
+            creative ideas, taking care of all the details. Our satisfied
+            clients and their comfortable and elegant homes are our best
+            reference.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <th:block th:insert="fragments/footer :: footer" />
+
+    <th:block th:insert="fragments/scroll-to-top :: scroll-to-top" />
+
+    <th:block th:insert="fragments/scripts :: scripts" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+      integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script th:src="@{/js/anim.js}" type="text/javascript"></script>
+    <script th:src="@{/js/scrollAnim.js}" type="text/javascript"></script>
+    <script th:src="@{/js/backToTop.js}" type="text/javascript"></script>
+  </body>
+</html>

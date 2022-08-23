@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html
+  lang="srb"
+  xmlns="https://www.w3.org/1999/xhtml"
+  xmlns:th="https://www.thymeleaf.org"
+  xmlns:sec="https://www.thymeleaf.org/extras/spring-security"
+>
+  <head>
+    <!-- <title>Uređenje enterijera | Jablan Dizajn enterijera</title> -->
+    <title>Interior design | Interior design Studio Jablan</title>
+    <link th:href="@{/css/footer.css}" rel="stylesheet" type="text/css" />
+
+    <meta
+      name="description"
+      content="An interior design service that creates the home you deeply desire, from the colour scheme to storage space. Meet your personal interior designer here.
+      "
+    />
+
+    <!-- css files -->
+
+    <th:block th:insert="fragments/head :: head" />
+  </head>
+
+  <body>
+    <th:block th:insert="fragments/navbar :: navbar" />
+
+    <main>
+      <div class="grid-container">
+        <div class="item-1 ml-1r">
+          <!-- <h1>Uređenje enterijera</h1> -->
+          <h1>Interior design</h1>
+        </div>
+        <div class="item-2">
+          <img src="../img/int-des.jpg" />
+        </div>
+      </div>
+      <div class="content ltr">
+        <div class="left">
+          <!-- <h2>Vrhunska formula cementa</h2> -->
+          <h2>Detailed approach</h2>
+        </div>
+        <div class="right">
+          <!-- <p>
+            Ova vrhunska formula preslojnog cementa ima veoma malu verovatnoću
+            pucanja. Njegova svojstva obezbeđuju minimalnu pokretljivost
+            površine tamo gde drugi klasični materijali ne mogu da se takmiče.
+            Neverovatna svojstva aplikacije. Materijal se može nanositi i na
+            podloge kao što su drvo, staklo, gvožđe, stiropor itd.
+          </p> -->
+          <p>
+            The design project is not only the visualization of your ideas about
+            the future appearance of a house or apartment, but also a detailed
+            selection and calculation of the required finishing materials,
+            furniture, the creation of drawings and schemes according to which
+            construction work will be carried out. You will receive several
+            layouts to choose from, visualization and a spherical 3D panorama of
+            the space, detailed working documentation and specification with all
+            item numbers and applications.
+          </p>
+        </div>
+      </div>
+      <div class="img-wrap">
+        <img src="../img/int-des-2.jpg" alt="O nama 2" />
+      </div>
+      <div class="content rtl">
+        <div class="left">
+          <!-- <h2>Fleksibilan i otporan</h2> -->
+          <h2>Listening to your needs</h2>
+        </div>
+        <div class="right">
+          <!-- <p>
+            Ima neverovatnu fleksibilnost i otpornost, tako da je pogodan za
+            podove i površinsku obradu kako u zatvorenom tako i na otvorenom.
+            Otporan je na smrzavanje, kiseline, alkalije i abraziju. Čak i posle
+            dužeg vremena zadržava svež i neoštećen izgled. Posebna formula
+            obezbeđuje proizvodnju vernih kopija drveta,
+          </p> -->
+          <p>
+            First of all, the functional filling of the interior implies a
+            rational approach to the planning and re-planning of the space for
+            the needs of the customer. Each family is unique, it means that each
+            of its members has their own needs, rhythm and lifestyle, therefore
+            the organization of space will be created taking into account their
+            individuality.
+          </p>
+        </div>
+      </div>
+      <div class="img-wrap">
+        <img src="../img/int-des-3.jpg" alt="O nama 2" />
+      </div>
+      <div class="content ltr">
+        <div class="left">
+          <h2>Foundation of success</h2>
+        </div>
+        <div class="right">
+          <p>
+            We also design commercial interior design. The interior is also able
+            to create the first impression that will be the foundation of
+            success for restaurants, hotels, boutiques, beauty salons and
+            business spaces.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <div class="other-services-link-btn">
+      <!-- <a th:href="@{/usluge}">Ostale usluge</a> -->
+      <a th:href="@{/services}">Other services</a>
+    </div>
+    <th:block th:insert="fragments/footer :: footer" />
+
+    <th:block th:insert="fragments/scroll-to-top :: scroll-to-top" />
+
+    <th:block th:insert="fragments/scripts :: scripts" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+      integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script th:src="@{/js/anim.js}" type="text/javascript"></script>
+    <script th:src="@{/js/scrollAnim.js}" type="text/javascript"></script>
+    <script th:src="@{/js/backToTop.js}" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html
+  lang="srb"
+  xmlns="https://www.w3.org/1999/xhtml"
+  xmlns:th="https://www.thymeleaf.org"
+  xmlns:sec="https://www.thymeleaf.org/extras/spring-security"
+>
+  <head>
+    <!-- <title>Kontakt</title> -->
+    <title>Contact | Interior Design Studio Jablan</title>
+    <link th:href="@{/css/footer.css}" rel="stylesheet" type="text/css" />
+
+    <meta
+      name="description"
+      content="Studio Jablan address and contacts in Belgrade. We invite you to the office in the style of a loft on 43 B, Masarikova street."
+    />
+
+    <th:block th:insert="fragments/head :: head" />
+
+    <!-- css files -->
+    <link th:href="@{/css/contact.css}" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <th:block th:insert="fragments/navbar :: navbar" />
+
+    <main>
+      <div class="grid-container">
+        <div class="item-1">
+          <!-- <h1>Kontakt</h1> -->
+          <h1>Contact</h1>
+        </div>
+        <div class="item-2">
+          <img src="../img/contact.jpg" />
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <article class="contact-card">
+          <div class="contact-text">
+            <h2>Email</h2>
+            <a href="mailto:info@jablanstudio.com">info@jablanstudio.com</a>
+          </div>
+        </article>
+        <article class="contact-card">
+          <div class="contact-text">
+            <h2>Phone</h2>
+            <a href="tel:(+311) 64 125 45 21">(+311) 64 125 45 21</a>
+            <br>
+            <a href="tel:(+311) 64 155 45 21">(+311) 64 155 45 21</a>
+          </div>
+        </article>
+        <article class="contact-card">
+          <div class="contact-text">
+            <h2>Location</h2>
+            <a href="">Naziv ulice 01, 11 000, Grad, Država</a>
+          </div>
+        </article>
+        <article class="contact-card">
+          <div class="contact-text">
+            <h2>Working hours</h2>
+            <p>
+              Monday – Friday from 10AM to 7PM
+            </p>
+          </div>
+        </article>
+      </div>
+    </main>
+    <th:block th:insert="fragments/footer :: footer" />
+
+    <th:block th:insert="fragments/scripts :: scripts" />
+    <script th:src="@{/js/anim.js}" type="text/javascript"></script>
+  </body>
+</html>
