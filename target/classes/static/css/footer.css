@@ -1,5 +1,5 @@
 .footer .footer-flex {
-  border-top: 1px solid var(--accent);
+  border-top: 1px solid var(--dark);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

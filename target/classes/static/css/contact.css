@@ -1,7 +1,6 @@
 .contact-grid {
   padding: 1rem;
-  max-width: 1200px;
-  margin: auto;
+  max-width: 1500px;
 }
 
 @media (min-width: 800px) {
@@ -11,6 +10,7 @@
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    margin: 5rem 0;
   }
 }
 
