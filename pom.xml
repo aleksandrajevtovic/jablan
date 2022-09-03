@@ -14,7 +14,7 @@
 	<name>jablan</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>16</java.version>
+		<java.runtime.version>16</java.runtime.version>
 	</properties>
 	<dependencies>
 		<dependency>
