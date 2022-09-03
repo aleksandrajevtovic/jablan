@@ -8,6 +8,13 @@ tl.fromTo(
 );
 
 tl.fromTo(
+  ".hero-section h2",
+  { opacity: 0, y: -250, skewY: -20 },
+  { opacity: 1, y: -50, skewY: 0, stagger: 0.3 },
+  "<"
+);
+
+tl.fromTo(
   ".hero-image .image",
   { opacity: 0, y: -500 },
   { opacity: 1, y: 0 },
@@ -31,3 +38,13 @@ tl.fromTo(
 tl.fromTo(".hero-image .image", { scale: 0.8 }, { scale: 0.65 }, "<50%");
 
 tl.fromTo("header", { opacity: 0 }, { opacity: 1 }, "<");
+
+tl.from(
+  ".btn.hero-btn",
+  1,
+  {
+    scale: 0,
+    ease: Elastic.easeOut.config(1.5, 0.4),
+  },
+  "<60%"
+);

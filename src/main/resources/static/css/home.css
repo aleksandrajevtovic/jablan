@@ -93,6 +93,16 @@ body#bodyHome {
   z-index: 5;
 }
 
+.btn.hero-btn {
+  position: absolute;
+  z-index: 5;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 80%;
+  left: 50%;
+  padding: 26px 36px;
+}
+
 @media (max-width: 991px) {
   .home-main h1,
   .wrapper-img,
@@ -124,12 +134,17 @@ body#bodyHome {
     width: 100%;
     text-align: center;
     position: absolute;
-    top: 48%;
+    top: 43%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     color: #221e1a;
     z-index: 3;
     text-transform: uppercase;
+  }
+  .btn.hero-btn {
+    top: 75%;
+    padding: 26px 40px;
+    z-index: 4;
   }
 }

@@ -58,7 +58,6 @@ body#bodyHome {
     background: url("../img/main-home-left.jpg") no-repeat 50% 50%;
     background-size: cover;
     // transform: translate(-50%, -50%) translate(-400px, 0px) rotate(-10deg);
-    
   }
   .right {
     background: url("../img/main-home-right.jpg") no-repeat 50% 50%;
@@ -82,7 +81,6 @@ body#bodyHome {
   h2 {
     display: none;
   }
-  
 }
 .title {
   .letter {
@@ -95,6 +93,16 @@ body#bodyHome {
 .wrapper-img,
 .images {
   z-index: 5;
+}
+
+.btn.hero-btn {
+  position: absolute;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+  top: 80%;
+  left: 50%;
+  // padding: 20px 40px;
+  padding: 26px 36px;
 }
 @media (max-width: 991px) {
   .home-main h1,
@@ -119,19 +127,24 @@ body#bodyHome {
     }
   }
   .hero-section {
-  h2 {
-    display: block;
-    font-family: var(--ffNormal);
-    font-weight: 400;
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #221e1a;
-    z-index: 3;
-    text-transform: uppercase;
+    h2 {
+      display: block;
+      font-family: var(--ffNormal);
+      font-weight: 400;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 43%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #221e1a;
+      z-index: 3;
+      text-transform: uppercase;
+    }
   }
-}
+  .btn.hero-btn {
+      top: 75%;
+      padding: 26px 40px;
+      z-index: 4;
+  }
 }
