@@ -4,7 +4,7 @@ const tlContentLtr = gsap.timeline({
     trigger: ".gridWrapper .box",
     start: "-200%",
     end: "50%",
-    markers: true,
+    // markers: true,
     // scrub: true,
     // pinSpacing:false,
   },
