@@ -5,22 +5,16 @@
 
 header {
   background-color: var(--light);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 20px 30px;
   position: relative;
   z-index: 5;
 }
-
 header a {
   color: var(--white);
   text-decoration: none;
 }
-
 header .nav-btn {
   font-size: 25px;
   cursor: pointer;
@@ -28,38 +22,26 @@ header .nav-btn {
   display: none;
   background-color: transparent;
 }
-
 header ul {
   list-style-type: none;
 }
-
 header ul li {
   padding: 0.7rem 0;
   overflow: hidden;
 }
-
 header ul li:first-child {
   padding-top: 0;
 }
-
 header ul li:last-child {
   padding-bottom: 0;
 }
-
 header .menu {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: right;
 }
-
 header .menu a {
   font-size: 18px;
   text-decoration: none;
@@ -67,21 +49,16 @@ header .menu a {
   padding: 5px 15px;
   text-transform: uppercase;
   border-radius: 15px;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
-  -webkit-transition-property: color, background;
   transition-property: color, background;
 }
-
 header .menu a:hover {
   color: var(--accent);
 }
 
 @media (max-width: 991px) {
   header {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     padding: 0px 15px 10px 15px;
   }
   header .nav-btn {
@@ -96,18 +73,13 @@ header .menu a:hover {
   header .menu {
     position: fixed;
     background: var(--black);
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     min-width: 100%;
     height: 100vh;
     top: 0;
     right: -100%;
     padding: 80px 50px;
-    -webkit-transition-property: right;
     transition-property: right;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
     text-align: center;
   }
@@ -120,8 +92,7 @@ header .menu a:hover {
     position: absolute;
     bottom: 0;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     color: var(--light);
     text-transform: uppercase;
     font-size: 14px;
@@ -143,7 +114,6 @@ header .menu a:hover {
     padding: 0;
   }
 }
-
 @media (max-width: 767px) {
   .company {
     display: none;

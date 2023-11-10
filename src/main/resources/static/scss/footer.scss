@@ -25,16 +25,19 @@
           text-decoration: none;
           svg {
             &:hover {
-                  transform-origin: 50% 50%;
-                  transition: transform 0.4s ease-out;
-                  transform: rotateZ(360deg);
-                  stroke: var(--accent);
-                
+              transform-origin: 50% 50%;
+              transition: transform 0.4s ease-out;
+              transform: rotateZ(360deg);
+              stroke: var(--accent);
             }
           }
         }
       }
     }
+  }
+  .link-custom {
+    text-decoration: none;
+    color: var(--accent);
   }
 }
 

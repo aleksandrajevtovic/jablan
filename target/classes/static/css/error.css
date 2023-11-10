@@ -1,10 +1,8 @@
 .error-content {
-  display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
   padding: 5rem 3rem;
 }
-
 .error-content .error-title h2 {
   font-weight: 400;
   text-transform: uppercase;
@@ -12,9 +10,7 @@
 }
 
 .error-btn-section {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 @media (max-width: 991px) {
@@ -28,13 +24,11 @@
     padding: 20px 30px;
   }
 }
-
 @media (max-width: 767px) {
   .error-content {
     padding: 3rem 1rem;
   }
 }
-
 @media (max-width: 575px) {
   .error-content {
     padding: 3rem 1rem;

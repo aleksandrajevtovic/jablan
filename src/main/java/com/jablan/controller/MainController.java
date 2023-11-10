@@ -1,7 +1,11 @@
 package com.jablan.controller;
 
+import java.time.Year;
+
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 
 @Controller
 public class MainController {
@@ -54,6 +58,12 @@ public class MainController {
     @GetMapping(value = "/services/new-home-selections")
     public String newHFomeSelectionsPageJablan() {
         return "main/new-home-selections";
+    }
+
+    @ModelAttribute
+    public void addCurrentYear(Model model) {
+        int currentYear = Year.now().getValue();
+        model.addAttribute("currentYear", currentYear);
     }
 
 }
