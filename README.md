@@ -14,4 +14,4 @@ Jablan is an interior design studio and creates exclusive design for any type of
 </ul>
 </div>
 
-https://studiojablan.herokuapp.com/
+https://studiojablan.onrender.com
